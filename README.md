@@ -157,13 +157,13 @@ Here are some examples of the model's outputs:
 
 #### Validation Set Examples
 
-![Comparison 1](results/comparison_0.png)
+![Comparison 1](Results/comparison_0.png)
 *Left: Satellite image, Middle: Generated map, Right: Ground truth map*
 
-![Comparison 2](results/comparison_1.png)
+![Comparison 2](Results/comparison_1.png)
 *Left: Satellite image, Middle: Generated map, Right: Ground truth map*
 
-![Comparison 3](results/comparison_2.png)
+![Comparison 3](Results/comparison_2.png)
 *Left: Satellite image, Middle: Generated map, Right: Ground truth map*
 
 #### Custom Image Example
