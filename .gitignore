@@ -24,8 +24,11 @@ ENV/
 # Generated files
 samples/
 checkpoints/
-results/
-data/
+# Allow some results for README
+!results/comparison_0.png
+!results/comparison_1.png
+!results/comparison_2.png
+!custom_result.png
 
 # Jupyter Notebook
 .ipynb_checkpoints

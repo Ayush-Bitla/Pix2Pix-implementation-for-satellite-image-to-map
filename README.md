@@ -151,6 +151,32 @@ Note: For best results, use satellite images that are similar to those in the tr
 
 The model showed progressive improvement during training, with the validation loss decreasing from approximately 26.33 to 8.18 over 10 epochs. The generated maps capture the essential road structures and geographical features from the satellite images.
 
+### Example Outputs
+
+Here are some examples of the model's outputs:
+
+#### Validation Set Examples
+
+![Comparison 1](results/comparison_0.png)
+*Left: Satellite image, Middle: Generated map, Right: Ground truth map*
+
+![Comparison 2](results/comparison_1.png)
+*Left: Satellite image, Middle: Generated map, Right: Ground truth map*
+
+![Comparison 3](results/comparison_2.png)
+*Left: Satellite image, Middle: Generated map, Right: Ground truth map*
+
+#### Custom Image Example
+
+![Custom Result](custom_result.png)
+*Left: Input satellite image, Right: Generated map*
+
+The model effectively learns to identify and translate key features from satellite imagery to map representations:
+- Road networks are clearly identified and represented
+- Building structures are properly outlined
+- Land features are distinguished appropriately
+- Color mapping aligns with standard map conventions
+
 Sample results can be found in the `results` directory after running the test script.
 
 ## Future Improvements
