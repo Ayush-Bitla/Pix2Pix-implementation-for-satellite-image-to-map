@@ -241,16 +241,18 @@
             const gaugeFill = document.getElementById('gauge-fill');
             const accuracyValue = {{ metrics.accuracy }};
             
-            // Calculate rotation - enhance the gauge appearance by adding a min 45% fill 
-            const minRotation = 81; // 45% of 180 degrees
-            const maxRotation = 180;
-            const availableRotation = maxRotation - minRotation;
-            const accuracyPercent = (accuracyValue - 0) / 100;
-            const rotation = minRotation + (accuracyPercent * availableRotation);
+            // Reverse the rotation for the gauge
+            const minRotation = 180; // Maximum fill at 100% (starting point)
+            const maxRotation = 45;  // Minimum fill at 0% (end point)
             
-            // Apply the rotation
+            // Calculate the rotation based on the accuracy value
+            const accuracyPercent = (accuracyValue / 100);
+            const rotation = minRotation - (accuracyPercent * (minRotation - maxRotation));
+            
+            // Apply the rotation to the gauge fill
             gaugeFill.style.transform = `rotate(${rotation}deg)`;
         });
+        
     </script>
 </body>
-</html> 
+</html>
