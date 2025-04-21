@@ -1,0 +1,9 @@
+flask==2.3.3
+werkzeug==2.3.7
+numpy==1.26.4
+torch==2.2.0
+torchvision==0.17.0
+Pillow==10.1.0
+dominate==2.8.0
+visdom==0.2.4
+tqdm==4.66.1 

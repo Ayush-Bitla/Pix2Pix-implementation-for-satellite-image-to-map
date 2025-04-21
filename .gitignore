@@ -1,0 +1,32 @@
+# Ignore Python virtual environments
+.venv/
+env/
+venv/
+
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# Environment variables and logs
+.env
+*.log
+
+# Archives
+*.tar.gz
+*.zip
+
+# Checkpoints, datasets, results
+checkpoints/
+datasets/
+results/
+maps.tar.gz
+pytorch-CycleGAN-and-pix2pix/
+
